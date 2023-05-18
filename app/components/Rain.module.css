@@ -15,7 +15,7 @@
   height: 90px;
   position: absolute;
   bottom: 100%;
-  animation: fall linear infinite;
+  animation: fall 2s linear infinite;
 }
 
 @keyframes fall {

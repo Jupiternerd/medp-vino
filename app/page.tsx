@@ -35,18 +35,64 @@ const storyData: StoryDataInterface[] = [
       text: "...",
       fancyIntro: true
     }
-  },   {
+  },
+  {
     index: 1,
-    background: "/backgrounds/daisy_white.webp",
-    character: "/characters/alice/angry.webp",
+    background: "/backgrounds/daisy.webp",
+    character: "/characters/alice/smile.webp",
     choices: [{
       script: "next",
-      text: "Ahahaha"
+      text: "!!!!"
     }],
-    rain: "light",
+    jump: true,
     display: {
-      name: "You",
-      text: "Hello Alice"
+      name: "???",
+      text: "Boo!",
+    }
+  },
+  {
+    index: 2,
+    background: "/backgrounds/daisy.webp",
+    character: "/characters/alice/smile.webp",
+    choices: [{
+      script: "next",
+      text: "...no"
+    }, { 
+      script: 4,
+      text: "...yeah"
+    }],
+    jump: true,
+    display: {
+      name: "???",
+      text: "Ahaha~, Did I scare you?",
+    }
+  },
+  {
+    index: 3,
+    background: "/backgrounds/daisy.webp",
+    character: "/characters/alice/normal.webp",
+    choices: [{
+      script: "next",
+      text: "sucks"
+    }],
+    jump: true,
+    display: {
+      name: "???",
+      text: "Aw~ I was hoping to get a reaction out of you.",
+    }
+  },
+  {
+    index: 4,
+    background: "/backgrounds/daisy.webp",
+    character: "/characters/alice/smile.webp",
+    choices: [{
+      script: "next",
+      text: "!!!!"
+    }],
+    jump: true,
+    display: {
+      name: "???",
+      text: "Nice! I'll try to scare you again later, keep an eye out!",
     }
   }
 ]
