@@ -43,21 +43,13 @@ const storyData: StoryDataInterface[] = [
       script: "next",
       text: "Ahahaha"
     }],
+    rain: "light",
     display: {
       name: "You",
       text: "Hello Alice"
     }
   }
 ]
-
-function refreshRainLogic(type: RainTypeString): boolean {
-  // Create and dispatch a rainEvent
-  const rainEvent = new CustomEvent<RainTypeString>("rainEvent", {
-      detail: type,
-  });
-  return window.dispatchEvent(rainEvent);
-}
-
 export default function Home() {
   const [stage, setStage] = useState(0);
 

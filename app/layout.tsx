@@ -7,11 +7,6 @@ import './globals.css'
 import Rain, { RainTypeString } from './components/Rain';
 import { useEffect, useState } from 'react';
 
-export const metadata = {
-  title: 'Visual Novel Thing',
-  description: 'By Shokkunn',
-}
-
 const Noto = Noto_Sans({   
   weight: '400',
   subsets: ['latin'],

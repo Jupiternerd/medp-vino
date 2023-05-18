@@ -1,6 +1,5 @@
 import Link from "next/link"
 import { Noto_Sans } from "next/font/google";
-import Divider from "./components/Divider";
 
 const Noto = Noto_Sans({   
   weight: '400',
