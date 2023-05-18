@@ -21,7 +21,7 @@ export default function Footer() {
       <div>
         <a href="https://www.shokkunn.art" target="_blank" rel="noopener noreferrer" style={{ margin: '0 10px' }}>Main Website</a>
         <a href="https://www.linkedin.com/in/wai-hlaing-b9a3a81b8/" target="_blank" rel="noopener noreferrer" style={{ margin: '0 10px' }}>LinkedIn</a>
-        <a href="https://www.github.com" target="_blank" rel="noopener noreferrer" style={{ margin: '0 10px' }}>GitHub (source code)</a>
+        <a href="https://github.com/Jupiternerd/medp-vino" target="_blank" rel="noopener noreferrer" style={{ margin: '0 10px' }}>GitHub (source code)</a>
       </div>
       <div>
         <p>
