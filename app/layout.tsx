@@ -6,7 +6,6 @@ import NavMenu from './NavMenu'
 import './globals.css'
 import Rain, { RainTypeString } from './components/Rain';
 import { useEffect, useState } from 'react';
-import { refreshRainLogic } from './page';
 
 export const metadata = {
   title: 'Visual Novel Thing',

@@ -30,8 +30,6 @@ const storyData: StoryDataInterface[] = [
       script: "next",
       text: "look around"
     }],
-    rain: "none",
-    jump: false,
     display: {
       name: "You",
       text: "...",
@@ -39,14 +37,12 @@ const storyData: StoryDataInterface[] = [
     }
   },   {
     index: 1,
-    background: "/backgrounds/cloudy_white.webp",
-    character: "/characters/alice/alice_smiling.webp",
+    background: "/backgrounds/daisy_white.webp",
+    character: "/characters/alice/angry.webp",
     choices: [{
       script: "next",
       text: "Ahahaha"
     }],
-    rain: "none",
-    jump: true,
     display: {
       name: "You",
       text: "Hello Alice"
@@ -54,12 +50,12 @@ const storyData: StoryDataInterface[] = [
   }
 ]
 
-export function refreshRainLogic(type?: RainTypeString) {
+function refreshRainLogic(type: RainTypeString): boolean {
   // Create and dispatch a rainEvent
   const rainEvent = new CustomEvent<RainTypeString>("rainEvent", {
       detail: type,
   });
-  window.dispatchEvent(rainEvent);
+  return window.dispatchEvent(rainEvent);
 }
 
 export default function Home() {
@@ -70,7 +66,10 @@ export default function Home() {
     const loadedStage = Cookies.get('stage');
     if (loadedStage) {
       setStage(Number(loadedStage));
-      refreshRainLogic(storyData[Number(loadedStage)].rain)
+      const rainEvent = new CustomEvent<RainTypeString>("rainEvent", {
+      detail: storyData[Number(loadedStage)].rain ?? "none",
+      });
+      window.dispatchEvent(rainEvent);
     }
   }, []);
 
@@ -100,7 +99,10 @@ export default function Home() {
 
     // rain logic
     if (storyData[newStage].rain) {
-      refreshRainLogic(storyData[newStage].rain);
+      const rainEvent = new CustomEvent<RainTypeString>("rainEvent", {
+      detail: storyData[newStage].rain ?? "none",
+      });
+      window.dispatchEvent(rainEvent);
     }
   };
 
