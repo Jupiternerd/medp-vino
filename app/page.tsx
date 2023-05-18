@@ -56,10 +56,10 @@ const storyData: StoryDataInterface[] = [
     character: "/characters/alice/smile.webp",
     choices: [{
       script: "next",
-      text: "...no"
+      text: "no"
     }, { 
       script: 4,
-      text: "...yeah"
+      text: "yeah"
     }],
     jump: true,
     display: {
@@ -151,13 +151,13 @@ export default function Home() {
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'center',
-      alignItems: 'center'
+      alignItems: 'center',
     }}>
       <div style={{width: '80vw', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
         <Scene background={currentStoryData.background} character={currentStoryData.character} jump={currentStoryData.jump} intro={currentStoryData.display.fancyIntro}/>
         <Textbox name={currentStoryData.display.name} text={currentStoryData.display.text} />
       </div>
-      <div style={{paddingTop: "20px"}}>
+      <div style={{marginTop: "20px", display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
       {currentStoryData.choices.map((choice, index) => 
         <Choicebox key={index} text={choice.text} script={choice.script} navigate={navigate}/>
       )}
