@@ -25,3 +25,33 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+
+/* Larger screen sizes */
+@media (min-width: 1024px) {
+  .scene {
+    width: 70vw;
+    height: 50vh;
+  }
+}
+
+/* Smaller screen sizes */
+@media (max-width: 768px) {
+  .scene {
+    width: 90vw;
+    height: 70vh;
+  }
+}
+
+@keyframes jump {
+  0% { transform: translateY(0); }
+  30% { transform: translateY(-60px); }
+  50% {transform: translateY(0); }
+  70% { transform: translateY(-30px); }
+  80% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.jumping {
+  animation: jump 0.5s ease-in-out;
+}
