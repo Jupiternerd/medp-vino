@@ -1,6 +1,10 @@
+## About
+
+This is the final project for my MEDP150 class that I took/am taking at Cuny Hunter College. Enjoy!
+
 ## Website Link
 
-Play the VN @ [this link](https://medp-vino.vercel.app/)
+Play the VisualNovel @ [this link](https://medp-vino.vercel.app/)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
