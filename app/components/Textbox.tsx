@@ -19,7 +19,7 @@ const Textbox: React.FC<TextboxProps> = ({ name, text }) => {
 
       const timeoutId = setTimeout(() => {
         setCurrentText(text.slice(0, currentText.length + 1)); // Add the next character to `currentText`
-      }, 70); 
+      }, 40); 
 
       return () => clearTimeout(timeoutId); 
     }
