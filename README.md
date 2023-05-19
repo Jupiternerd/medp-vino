@@ -4,7 +4,7 @@ This is the final project for my MEDP150 class that I took/am taking at Cuny Hun
 
 ## Website Link
 
-Play the VisualNovel @ [this link](https://medp-vino.vercel.app/)
+Play the VisualNovel [here](https://medpfinal.shokkunn.art)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
