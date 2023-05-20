@@ -4,8 +4,8 @@ import styles from "./Rain.module.css";
 export enum RainType {
     none = 0,
     light = 10,
-    normal = 40,
-    heavy = 100
+    normal = 25,
+    heavy = 50
 }
 
 export type RainTypeString = keyof typeof RainType;

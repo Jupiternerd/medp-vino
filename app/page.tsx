@@ -302,7 +302,7 @@ const storyData: StoryDataInterface[] = [
     }],
     display: {
       name: "aly",
-      text: "...I didn't want this to end... I just wanted to be happy...",
+      text: "...I didn't want this to end... I...",
     },
     rain: "heavy"
   }, {
@@ -315,7 +315,7 @@ const storyData: StoryDataInterface[] = [
     }],
     display: {
       name: "aly",
-      text: "Sorry! Sorry! I'm just getting it out of my chest! No need to feel alarmed... I uh... I really enjoyed our time together...! Oh! T-tell the others I said hi! And tell that blue haired idiot to be nicer to you...! And. I... I...",
+      text: "Sorry! Sorry! I'm just getting it out of my chest! No need to feel alarmed... I uh... I really enjoyed our time together...! Oh! T-tell the others I said hi! And tell that blue haired idiot to stop scheming behind our backs...! And. I... I...",
     },
     rain: "heavy"
   }, {
@@ -341,7 +341,7 @@ const storyData: StoryDataInterface[] = [
     }],
     display: {
       name: "aly",
-      text: "I still love you.",
+      text: "I love you.",
     },
     rain: "none"
   }, {
@@ -414,16 +414,12 @@ export default function Home() {
 
     if (newStage === 18) {
       Cookies.set('stage', "19");
-      const rainEvent = new CustomEvent<RainTypeString>("rainEvent", {
-      detail: "heavy",
-      });
-      window.dispatchEvent(rainEvent);
       setTimeout(() => setStage(19), 900);
     }
 
     if (newStage === 23) {
       Cookies.set('stage', "24");
-      setTimeout(() => setStage(24), 800);
+      setTimeout(() => setStage(24), 900);
     }
 
     // rain logic
