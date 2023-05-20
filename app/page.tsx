@@ -333,7 +333,7 @@ const storyData: StoryDataInterface[] = [
     rain: "heavy"
   }, {
     index: 23,
-    background: "/backgrounds/rain_white.webp",
+    background: "/backgrounds/daisy.webp",
     character: "/characters/alice/normal.webp",
     choices: [{
       script: "next",
@@ -414,7 +414,7 @@ export default function Home() {
 
     if (newStage === 18) {
       Cookies.set('stage', "19");
-      setTimeout(() => setStage(19), 900);
+      setTimeout(() => setStage(19), 1000);
     }
 
     if (newStage === 23) {
