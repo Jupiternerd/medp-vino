@@ -341,7 +341,7 @@ const storyData: StoryDataInterface[] = [
     }],
     display: {
       name: "aly",
-      text: "I love you.",
+      text: "I still love you.",
     },
     rain: "none"
   }, {
