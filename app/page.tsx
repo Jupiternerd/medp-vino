@@ -315,7 +315,7 @@ const storyData: StoryDataInterface[] = [
     }],
     display: {
       name: "aly",
-      text: "Sorry! Sorry! I'm just getting it out of my chest! No need to feel alarmed... I uh... I really enjoyed our time together...! Oh! T-tell the others I said hi! And tell that blue haired idiot to stop scheming behind our backs...! And. I... I...",
+      text: "Sorry! Sorry! I'm just getting it out of my system! No need to feel alarmed... I uh... I really enjoyed our time together...! Oh! T-tell the others I said hi! And tell that blue haired idiot to stop scheming behind our backs...! And. I... I...",
     },
     rain: "heavy"
   }, {
@@ -333,7 +333,7 @@ const storyData: StoryDataInterface[] = [
     rain: "heavy"
   }, {
     index: 23,
-    background: "/backgrounds/daisy.webp",
+    background: "/backgrounds/daisy_white.webp",
     character: "/characters/alice/normal.webp",
     choices: [{
       script: "next",
@@ -346,7 +346,7 @@ const storyData: StoryDataInterface[] = [
     rain: "none"
   }, {
     index: 24,
-    background: "/backgrounds/daisy.webp",
+    background: "/backgrounds/daisy_white.webp",
     choices: [{
       script: "next",
       text: "..."
@@ -358,7 +358,7 @@ const storyData: StoryDataInterface[] = [
     rain: "none"
   }, {
     index: 25,
-    background: "/backgrounds/daisy_white.webp",
+    background: "/backgrounds/daisy.webp",
     choices: [],
     display: {
       name: "You",
