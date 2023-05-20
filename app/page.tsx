@@ -223,7 +223,7 @@ const storyData: StoryDataInterface[] = [
     }],
     display: {
       name: "aly",
-      text: "I just wanted to thank you... for being there for them and for me. I",
+      text: "I just wanted to thank you... for being there when... I",
     }
   }, {
     index: 16,
@@ -235,7 +235,7 @@ const storyData: StoryDataInterface[] = [
     }],
     display: {
       name: "aly",
-      text: "I... hope everyone's doing well... after what",
+      text: "I... hope everyone's doing well... after what I",
     },
     rain: "normal"
   }, {
@@ -244,13 +244,13 @@ const storyData: StoryDataInterface[] = [
     character: "/characters/alice/hidden.webp",
     choices: [{
       script: "next",
-      text: "Stop."
+      text: "???"
     }, {
       script: "next",
-      text: "Stop."
+      text: "What"
     }, {
       script: "next",
-      text: "Stop."
+      text: "are you saying?"
     }],
     display: {
       name: "aly",
@@ -273,7 +273,7 @@ const storyData: StoryDataInterface[] = [
     }],
     display: {
       name: "aly",
-      text: "I should just not exi",
+      text: "I should just fucking di",
     },
     rain: "none"
   }, {
@@ -289,20 +289,20 @@ const storyData: StoryDataInterface[] = [
     }],
     display: {
       name: "aly",
-      text: "Ahaha~ The rain sure is getting heavy... I... I should really get going...",
+      text: "Ahaha~ The rain sure is getting heavy!",
     },
     rain: "heavy"
   }, {
     index: 20,
     background: "/backgrounds/rain_white.webp",
-    character: "/characters/alice/hidden.webp",
+    character: "/characters/alice/normal.webp",
     choices: [{
       script: "next",
       text: "..."
     }],
     display: {
       name: "aly",
-      text: "...I didn't want this to end... I...",
+      text: "...",
     },
     rain: "heavy"
   }, {
@@ -311,11 +311,11 @@ const storyData: StoryDataInterface[] = [
     character: "/characters/alice/smile.webp",
     choices: [{
       script: "next",
-      text: "... I... think I'm starting to remember..."
+      text: "..."
     }],
     display: {
       name: "aly",
-      text: "Sorry! Sorry! I'm just getting it out of my system! No need to feel alarmed... I uh... I really enjoyed our time together...! Oh! T-tell the others I said hi! And tell that blue haired idiot to stop scheming behind our backs...! And. I... I...",
+      text: "Sorry! Sorry! I'm just getting it out of my system! No need to feel alarmed... I uh... I really enjoyed our time together...! Oh! T-tell the others I said hi! And tell that blue haired idiot that I.. And... I... I...",
     },
     rain: "heavy"
   }, {
@@ -333,7 +333,7 @@ const storyData: StoryDataInterface[] = [
     rain: "heavy"
   }, {
     index: 23,
-    background: "/backgrounds/daisy_white.webp",
+    background: "/solid_white.png",
     character: "/characters/alice/normal.webp",
     choices: [{
       script: "next",
@@ -341,7 +341,7 @@ const storyData: StoryDataInterface[] = [
     }],
     display: {
       name: "aly",
-      text: "I still love you.",
+      text: "I still love you",
     },
     rain: "none"
   }, {
@@ -414,12 +414,12 @@ export default function Home() {
 
     if (newStage === 18) {
       Cookies.set('stage', "19");
-      setTimeout(() => setStage(19), 700);
+      setTimeout(() => setStage(19), 800);
     }
 
     if (newStage === 23) {
       Cookies.set('stage', "24");
-      setTimeout(() => setStage(24), 900);
+      setTimeout(() => setStage(24), 700);
     }
 
     // rain logic
