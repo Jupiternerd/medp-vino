@@ -35,10 +35,10 @@ const Textbox: React.FC<TextboxProps> = ({ name, text }) => {
   }, []);
 
   return (
-    <div style={{ width: '50vw', backgroundColor: 'rgba(0, 0, 0, 0.5)', padding: '10px', color: 'white', borderRadius: '5px', marginTop: '20px' }}>
+    <div style={{ zIndex: 0, width: '50vw', backgroundColor: 'rgba(0, 0, 0, 0.5)', padding: '10px', color: 'white', borderRadius: '5px', marginTop: '20px' }}>
       <h1 style={{fontSize: '30px'}}><u>{name}</u></h1>
       <p style={{fontSize: '25px', marginTop: '10px', textAlign: "left"}}>
-      {currentText}
+      {`\"${currentText}\"`}
         <span style={{ visibility: cursorVisible ? 'visible' : 'hidden' }}>|</span>
       </p>
     </div>

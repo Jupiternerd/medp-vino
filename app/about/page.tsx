@@ -21,6 +21,7 @@ export default function About() {
 
   const resetStory = () => {
     Cookies.remove('stage');
+    Cookies.remove('accepted');
     setResetDisabled(true);
     window.location.reload();
   };
@@ -36,8 +37,7 @@ export default function About() {
           <p style={{paddingTop: "8px"}}>
             You received an email from a shady-looking address. It contained a purple link, 
             indicating that you’ve visited the website before, but have no recollection of ever doing so.
-            You were about to delete the email and forget about the ordeal... but something compelled you to go further.
-            Curiosity? Boredom? Didn't matter now, you already made your resolve.
+            You were about to delete the email and forget about it... but something compelled you to go further.
             <br/> <br/>
             Against your best judgment, you hovered your mouse over the link. 
             <br/> <br/>
