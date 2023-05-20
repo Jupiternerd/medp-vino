@@ -273,7 +273,7 @@ const storyData: StoryDataInterface[] = [
     }],
     display: {
       name: "aly",
-      text: "I should just die die die die die die die die die",
+      text: "I should just not exi",
     },
     rain: "none"
   }, {
@@ -414,7 +414,7 @@ export default function Home() {
 
     if (newStage === 18) {
       Cookies.set('stage', "19");
-      setTimeout(() => setStage(19), 1000);
+      setTimeout(() => setStage(19), 700);
     }
 
     if (newStage === 23) {
